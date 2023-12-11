@@ -16,6 +16,7 @@
 		A3A0AE7F2B272E1E00216DCF /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0AE7E2B272E1E00216DCF /* UserStatView.swift */; };
 		A3A0AE812B27361700216DCF /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0AE802B27361700216DCF /* FeedView.swift */; };
 		A3A0AE832B27362600216DCF /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0AE822B27362600216DCF /* FeedCell.swift */; };
+		A3A0AE852B273E0400216DCF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0AE842B273E0400216DCF /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A3A0AE7E2B272E1E00216DCF /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		A3A0AE802B27361700216DCF /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		A3A0AE822B27362600216DCF /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		A3A0AE842B273E0400216DCF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 		A3A0AE742B27232100216DCF /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				A3A0AE842B273E0400216DCF /* SearchView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				A3A0AE7C2B27256200216DCF /* ProfileView.swift in Sources */,
 				A3A0AE602B27197A00216DCF /* ContentView.swift in Sources */,
 				A3A0AE5E2B27197A00216DCF /* InstagramApp.swift in Sources */,
+				A3A0AE852B273E0400216DCF /* SearchView.swift in Sources */,
 				A3A0AE7F2B272E1E00216DCF /* UserStatView.swift in Sources */,
 				A3A0AE812B27361700216DCF /* FeedView.swift in Sources */,
 				A3A0AE792B2723F500216DCF /* MainTabView.swift in Sources */,
