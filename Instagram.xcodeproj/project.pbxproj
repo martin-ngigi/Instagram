@@ -17,6 +17,8 @@
 		A3A0AE812B27361700216DCF /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0AE802B27361700216DCF /* FeedView.swift */; };
 		A3A0AE832B27362600216DCF /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0AE822B27362600216DCF /* FeedCell.swift */; };
 		A3A0AE852B273E0400216DCF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0AE842B273E0400216DCF /* SearchView.swift */; };
+		A3A0AE872B2741AE00216DCF /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = A3A0AE862B2741AE00216DCF /* readme.md */; };
+		A3A0AE892B2741E400216DCF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0AE882B2741E400216DCF /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		A3A0AE802B27361700216DCF /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		A3A0AE822B27362600216DCF /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		A3A0AE842B273E0400216DCF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		A3A0AE862B2741AE00216DCF /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		A3A0AE882B2741E400216DCF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,7 @@
 		A3A0AE512B27197A00216DCF = {
 			isa = PBXGroup;
 			children = (
+				A3A0AE862B2741AE00216DCF /* readme.md */,
 				A3A0AE5C2B27197A00216DCF /* Instagram */,
 				A3A0AE5B2B27197A00216DCF /* Products */,
 			);
@@ -132,6 +137,7 @@
 		A3A0AE712B2722FF00216DCF /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				A3A0AE882B2741E400216DCF /* LoginView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -250,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A0AE662B27197E00216DCF /* Preview Assets.xcassets in Resources */,
+				A3A0AE872B2741AE00216DCF /* readme.md in Resources */,
 				A3A0AE622B27197E00216DCF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +271,7 @@
 				A3A0AE832B27362600216DCF /* FeedCell.swift in Sources */,
 				A3A0AE7C2B27256200216DCF /* ProfileView.swift in Sources */,
 				A3A0AE602B27197A00216DCF /* ContentView.swift in Sources */,
+				A3A0AE892B2741E400216DCF /* LoginView.swift in Sources */,
 				A3A0AE5E2B27197A00216DCF /* InstagramApp.swift in Sources */,
 				A3A0AE852B273E0400216DCF /* SearchView.swift in Sources */,
 				A3A0AE7F2B272E1E00216DCF /* UserStatView.swift in Sources */,
