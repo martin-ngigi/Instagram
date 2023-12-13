@@ -16,33 +16,39 @@ struct SearchView: View {
                 LazyVStack{
                     //ForEach(0 ... 15, id: \.self) { user in
                     ForEach(User.MOCK_USERS) { user in
-                        HStack(spacing: 12){
-                            Image(user.profileImageUrl ?? "profile_1")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 40, height: 40)
-                                .clipShape(Circle())
-                            
-                            VStack(alignment: .leading){
-                                Text(user.username)
-                                    .fontWeight(.semibold)
+                        NavigationLink(value: user){ // pass user object
+                            HStack(spacing: 12){
+                                Image(user.profileImageUrl ?? "profile_1")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 40, height: 40)
+                                    .clipShape(Circle())
                                 
-                                if let fullname = user.fullname {
-                                    Text(fullname)
+                                VStack(alignment: .leading){
+                                    Text(user.username)
+                                        .fontWeight(.semibold)
+                                    
+                                    if let fullname = user.fullname {
+                                        Text(fullname)
+                                    }
+                                    
                                 }
+                                .font(.footnote)
                                 
+                                Spacer()
                             }
-                            .font(.footnote)
-                            
-                            Spacer()
+                            .foregroundColor(.black)
+                            .padding(.horizontal)
                         }
-                        .padding(.horizontal)
                     }
                 }
                 .searchable(text: $searchText, prompt: "Search ... ")
             }
             .navigationTitle("Explore")
             //.navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(for: User.self) { user in
+                ProfileView(user: user)
+            }
         }
     }
 }
