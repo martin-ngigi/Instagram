@@ -12,7 +12,7 @@ struct AddEmailView: View {
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
-        VStack{
+        VStack(spacing: 12){
             Text("Add your email")
                 .font(.title2)
                 .fontWeight(.bold)

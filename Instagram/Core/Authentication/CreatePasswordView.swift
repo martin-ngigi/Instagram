@@ -1,5 +1,5 @@
 //
-//  CreateUsernameView.swift
+//  CreatePasswordView.swift
 //  Instagram
 //
 //  Created by Martin Wainaina on 13/12/2023.
@@ -7,30 +7,29 @@
 
 import SwiftUI
 
-struct CreateUsernameView: View {
-    
-    @State private var username =  ""
+struct CreatePasswordView: View {
+    @State private var password =  ""
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack(spacing: 12){
-            Text("Add your username")
+            Text("Create a password")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top)
             
-            Text("You'll use this username to sign in to your account")
+            Text("Your password must be strong and atleast 6 characters in length.")
                 .font(.footnote)
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal)
             
-            TextField("Username", text: $username)
-                .autocapitalization(.none)
+            SecureField("Password", text: $password)
                 .modifier(IGTextFieldModifier())
+                .padding(.top)
             
             NavigationLink{
-                CreatePasswordView()
+                CreateUsernameView()
                     .navigationBarBackButtonHidden()
             } label: {
                 Text("Next")
@@ -45,7 +44,7 @@ struct CreateUsernameView: View {
             
             Spacer()
         }
-        .toolbar{ // We don't need to add NavigationStack to CreateUsernameView since there is NavigationStack in LoginView. It all flows this root view (CreateUsernameView)
+        .toolbar{ // We don't need to add NavigationStack to CreatePasswordView since there is NavigationStack in LoginView. It all flows this root view (CreatePasswordView)
             ToolbarItem(placement: .navigationBarLeading){
                 Image(systemName: "chevron.left")
                     .imageScale(.large)
@@ -54,13 +53,11 @@ struct CreateUsernameView: View {
                     }
             }
             
-        }
-        
-    }
+        }    }
 }
 
-struct CreateUsernameView_Previews: PreviewProvider {
+struct CreatePasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateUsernameView()
+        CreatePasswordView()
     }
 }
