@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct FeedView: View {
     var body: some View {
         NavigationStack {

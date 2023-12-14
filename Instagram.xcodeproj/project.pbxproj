@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A32287522B2AF5360085D0C0 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32287512B2AF5360085D0C0 /* UploadPostViewModel.swift */; };
 		A375B3A12B29735D005D85B4 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375B3A02B29735D005D85B4 /* AddEmailView.swift */; };
 		A375B3A32B297C7A005D85B4 /* IGTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375B3A22B297C7A005D85B4 /* IGTextFieldModifier.swift */; };
 		A375B3A52B297E3F005D85B4 /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375B3A42B297E3F005D85B4 /* CreateUsernameView.swift */; };
@@ -17,6 +18,7 @@
 		A3830EE52B29A7FA00F0744B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3830EE42B29A7FA00F0744B /* Post.swift */; };
 		A3830EE72B29B20300F0744B /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3830EE62B29B20300F0744B /* PostGridView.swift */; };
 		A3830EE92B29B60E00F0744B /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3830EE82B29B60E00F0744B /* ProfileHeaderView.swift */; };
+		A3830EEB2B29B74C00F0744B /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3830EEA2B29B74C00F0744B /* UploadPostView.swift */; };
 		A3A0AE5E2B27197A00216DCF /* InstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0AE5D2B27197A00216DCF /* InstagramApp.swift */; };
 		A3A0AE602B27197A00216DCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0AE5F2B27197A00216DCF /* ContentView.swift */; };
 		A3A0AE622B27197E00216DCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A0AE612B27197E00216DCF /* Assets.xcassets */; };
@@ -32,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A32287512B2AF5360085D0C0 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		A375B3A02B29735D005D85B4 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		A375B3A22B297C7A005D85B4 /* IGTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextFieldModifier.swift; sourceTree = "<group>"; };
 		A375B3A42B297E3F005D85B4 /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		A3830EE42B29A7FA00F0744B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A3830EE62B29B20300F0744B /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		A3830EE82B29B60E00F0744B /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		A3830EEA2B29B74C00F0744B /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		A3A0AE5A2B27197A00216DCF /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A0AE5D2B27197A00216DCF /* InstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramApp.swift; sourceTree = "<group>"; };
 		A3A0AE5F2B27197A00216DCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,8 +146,8 @@
 				A3A0AE722B27230500216DCF /* Profile */,
 				A3A0AE732B27230E00216DCF /* Root */,
 				A3A0AE762B27238300216DCF /* TabBar */,
-				A3A0AE742B27232100216DCF /* Search */,
 				A3A0AE772B27238D00216DCF /* UploadPost */,
+				A3A0AE742B27232100216DCF /* Search */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -213,6 +217,8 @@
 		A3A0AE772B27238D00216DCF /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
+				A3830EEA2B29B74C00F0744B /* UploadPostView.swift */,
+				A32287512B2AF5360085D0C0 /* UploadPostViewModel.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -299,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A0AE832B27362600216DCF /* FeedCell.swift in Sources */,
+				A3830EEB2B29B74C00F0744B /* UploadPostView.swift in Sources */,
 				A3A0AE7C2B27256200216DCF /* ProfileView.swift in Sources */,
 				A3A0AE602B27197A00216DCF /* ContentView.swift in Sources */,
 				A3A0AE892B2741E400216DCF /* LoginView.swift in Sources */,
@@ -308,6 +315,7 @@
 				A3830EE32B29A38700F0744B /* CurrentUserProfileView.swift in Sources */,
 				A3830EE72B29B20300F0744B /* PostGridView.swift in Sources */,
 				A375B3A52B297E3F005D85B4 /* CreateUsernameView.swift in Sources */,
+				A32287522B2AF5360085D0C0 /* UploadPostViewModel.swift in Sources */,
 				A3830EE92B29B60E00F0744B /* ProfileHeaderView.swift in Sources */,
 				A3A0AE852B273E0400216DCF /* SearchView.swift in Sources */,
 				A3830EE12B29985F00F0744B /* User.swift in Sources */,
@@ -373,6 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -425,6 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -455,7 +465,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
@@ -493,7 +503,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.2;
