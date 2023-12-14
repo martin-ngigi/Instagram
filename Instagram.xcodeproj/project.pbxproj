@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A32287522B2AF5360085D0C0 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32287512B2AF5360085D0C0 /* UploadPostViewModel.swift */; };
+		A32287562B2B3DF60085D0C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A32287552B2B3DF60085D0C0 /* GoogleService-Info.plist */; };
 		A375B3A12B29735D005D85B4 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375B3A02B29735D005D85B4 /* AddEmailView.swift */; };
 		A375B3A32B297C7A005D85B4 /* IGTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375B3A22B297C7A005D85B4 /* IGTextFieldModifier.swift */; };
 		A375B3A52B297E3F005D85B4 /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375B3A42B297E3F005D85B4 /* CreateUsernameView.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		A32287512B2AF5360085D0C0 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
+		A32287552B2B3DF60085D0C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A375B3A02B29735D005D85B4 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		A375B3A22B297C7A005D85B4 /* IGTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextFieldModifier.swift; sourceTree = "<group>"; };
 		A375B3A42B297E3F005D85B4 /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		A3A0AE512B27197A00216DCF = {
 			isa = PBXGroup;
 			children = (
+				A32287552B2B3DF60085D0C0 /* GoogleService-Info.plist */,
 				A3A0AE862B2741AE00216DCF /* readme.md */,
 				A3A0AE5C2B27197A00216DCF /* Instagram */,
 				A3A0AE5B2B27197A00216DCF /* Products */,
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A0AE662B27197E00216DCF /* Preview Assets.xcassets in Resources */,
+				A32287562B2B3DF60085D0C0 /* GoogleService-Info.plist in Resources */,
 				A3A0AE872B2741AE00216DCF /* readme.md in Resources */,
 				A3A0AE622B27197E00216DCF /* Assets.xcassets in Resources */,
 			);
