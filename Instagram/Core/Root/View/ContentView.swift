@@ -9,11 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel = ContententViewModel()
+    @StateObject var registrationViewModel = RegistrationViewModel()
+    
     var body: some View {
         Group{
             // user not logged in
             if viewModel.userSession == nil {
                 LoginView()
+                    .environmentObject(registrationViewModel) // initialize registrationViewModel as environmentObject
             }
             // user is logged in
             else{
