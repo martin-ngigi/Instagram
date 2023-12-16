@@ -17,10 +17,12 @@ import Firebase
 
 class AuthService{
     @Published var userSession: FirebaseAuth.User?
+    @Published var currentUser: User?
+    
     static let shared = AuthService()
     
     init() {
-        
+        Task{ try await loadUserData() }
     }
 
     @MainActor
@@ -28,6 +30,7 @@ class AuthService{
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.userSession = result.user
+            try await loadUserData()
         }
         catch {
             print("DEBUG: Failed to login user with error \(error.localizedDescription)")
@@ -47,7 +50,13 @@ class AuthService{
         
     }
     
+    @MainActor
     func loadUserData() async throws {
+        self.userSession = Auth.auth().currentUser
+        guard let currentUid = self.userSession?.uid else { return }
+        let snapshot = try await Firestore.firestore().collection("users").document(currentUid).getDocument()
+        //print("DEBUG: snapshot data is \(snapshot.data())")
+        self.currentUser = try? snapshot.data(as: User.self) // decode date
         
     }
     
@@ -58,13 +67,14 @@ class AuthService{
     
     private func uploadUserData(uid: String, username: String, email: String) async throws {
         let user = User(id: uid, username: username, email: email)
+        self.currentUser = user
         
         //guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
         //try? await Firestore.firestore().collection("users").document(user.id).setData(encodedUser)
         // OR
         
         do{
-            let encodedUser = try Firestore.Encoder().encode(user)
+            let encodedUser = try Firestore.Encoder().encode(user) // encode data
             try await Firestore.firestore().collection("users").document(user.id).setData(encodedUser)
         }
         catch{
