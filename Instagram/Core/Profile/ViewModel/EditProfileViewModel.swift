@@ -23,6 +23,8 @@ class EditProfileViewModel: ObservableObject {
     @Published var fullname = ""
     @Published var bio = ""
     
+    private var uiImage: UIImage?
+    
     init(user: User){
         self.user = user
     }
@@ -32,14 +34,19 @@ class EditProfileViewModel: ObservableObject {
         
         guard let data = try? await item.loadTransferable(type: Data.self) else { return }
         guard let uiImage = UIImage(data: data) else { return }
+        self.uiImage = uiImage
         self.profileImage = Image(uiImage: uiImage)
     }
     
     func updateUserData() async throws {
+        // update profile image only if changed
         
         var data = [String: Any]() // initialize data dictionary i.e. map
         
-        // update profile image only if changed
+        if let uiImage = uiImage {
+            let imageUrl = try? await ImageUploader.uploadImage(image: uiImage)
+            data["profileImageUrl"] = imageUrl
+        }
         
         // update name only if changed
         if !fullname.isEmpty && user.username != fullname {
