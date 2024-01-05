@@ -23,11 +23,15 @@ struct SearchView: View {
                     
                         NavigationLink(value: user){ // pass user object
                             HStack(spacing: 12){
+                                /**
                                 Image(user.profileImageUrl ?? "profile_1")
                                     .resizable()
                                     .scaledToFill()
                                     .frame(width: 40, height: 40)
                                     .clipShape(Circle())
+                                **/
+                                
+                                CircularProfileImageView(user: user, size: .xSmall)
                                 
                                 VStack(alignment: .leading){
                                     Text(user.username)

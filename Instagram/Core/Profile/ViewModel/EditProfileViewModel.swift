@@ -27,6 +27,15 @@ class EditProfileViewModel: ObservableObject {
     
     init(user: User){
         self.user = user
+        
+        // if we have user data, set it in the edit text fields
+        if let fullname = user.fullname {
+            self.fullname = fullname
+        }
+        
+        if let bio = user.bio {
+            self.bio = bio
+        }
     }
     
     func loadImage(fromItem item: PhotosPickerItem?) async {
