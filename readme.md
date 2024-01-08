@@ -13,4 +13,5 @@
 <img src="images/Welcome.png" width="128"/>
 <img src="images/HomePage.png" width="128"/>
 <img src="images/Profile.png" width="128"/>
+<img src="images/EditProfile.png" width="128"/>
 <img src="images/Search.png" width="128"/>
